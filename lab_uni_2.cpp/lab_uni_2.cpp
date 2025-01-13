@@ -8,7 +8,7 @@ bool inside_area(double x, double y, double eps) {
     // y <= 1 
     // x >= -2 and x <= 2
     
-    return (y >= -1 - eps && y <= 1 + eps && x >= -2 - eps && x <= 2 + eps && y <= fabs(x) + eps);
+    return (y >= -1 - eps && x >= -1 - eps && x <= 1 + eps && y <= fabs(x) + eps);
 }
 
 int main() {
